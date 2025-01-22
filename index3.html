@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Cafe Website</title>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Cafe Logo</h1>
+    <button class="navbar-toggle" onclick="toggleNav()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index2.html">Menu</a></li>
+      <li><a href="index3.html">About</a></li>
+      <li><a href="index4.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Rest of your cafe website content goes here -->
+
+  <script>
+  function toggleNav() {
+  const navLinks = document.getElementById('navLinks');
+  if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+    navLinks.style.display = 'flex';
+  } else {
+    navLinks.style.display = 'none';
+  }
+}
+  </script>
+ 
+
+ <header class="welcome-section">
+    <div class="welcome-content">
+      <h1>Welcome to Love Cafe</h1>
+      <p>Experience the best hookah, Tea, and coffee in town.</p>
+      <a href="index2.html" class="btn">View Menu</a>
+    </div>
+  </header>
+
+
+  
+  <section class="about-us">
+    <div class="about-us-content">
+      <div class="about-us-image">
+        <img src="images/24323.jpg" alt="About Us Image">
+      </div>
+      <div class="about-us-text">
+        <h2 class="about-us-header">Welcome to Our Cafe</h2>
+        <p class="about-us-paragraph">At our cafe, we are passionate about serving you the best coffee and delicious treats. Our baristas are highly trained in the art of coffee-making, and we source the finest ingredients for all our products. Whether you're looking for a cozy spot to relax or a place to catch up with friends, we've got you covered. Come and experience the warmth and love we pour into every cup.</p>
+        <a class="about-us-button" href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="menu-section">
+    <h2>Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/close-up-hookah-vaping.jpg" alt="Nargile Tea">
+        <h3>Nargile Tea</h3>
+        <p>Delicious traditional nargile tea served with fresh mint.</p>
+        <p class="price">$4.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/side-view-cup-tea-with-dried-apricots-wood.jpg" alt="Coffee">
+        <h3>Coffee</h3>
+        <p>Enjoy our premium coffee made from freshly ground beans.</p>
+        <p class="price">$3.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/side-view-tea-pouring-into-armudu-glass.jpg" alt="Gaseous Drinks">
+        <h3>Gaseous Drinks</h3>
+        <p>Refreshing selection of gaseous drinks including sodas.</p>
+        <p class="price">$2.49</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>LOVE CAFE</h3>
+      </div>
+      <div class="footer-info">
+        <p>123 Cafe Street, london</p>
+        <p>Phone/WhatsApp: 07979899990</p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">Menu</a></li>
+          <li><a href="index3.html">About</a></li>
+          <li><a href="index4.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+</body>
+</html>

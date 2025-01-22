@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Cafe Website</title>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Cafe Logo</h1>
+    <button class="navbar-toggle" onclick="toggleNav()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index2.html">Menu</a></li>
+      <li><a href="index3.html">About</a></li>
+      <li><a href="index4.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Rest of your cafe website content goes here -->
+
+  <script>
+  function toggleNav() {
+  const navLinks = document.getElementById('navLinks');
+  if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+    navLinks.style.display = 'flex';
+  } else {
+    navLinks.style.display = 'none';
+  }
+}
+  </script>
+ 
+
+ <header class="welcome-section">
+    <div class="welcome-content">
+      <h1>Contact Us</h1>
+    </div>
+  </header>
+
+
+  <section class="menu-section">
+    <h2>Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/close-up-hookah-vaping.jpg" alt="Nargile Tea">
+        <h3>Nargile Tea</h3>
+        <p>Delicious traditional nargile tea served with fresh mint.</p>
+        <p class="price">$4.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/side-view-cup-tea-with-dried-apricots-wood.jpg" alt="Coffee">
+        <h3>Coffee</h3>
+        <p>Enjoy our premium coffee made from freshly ground beans.</p>
+        <p class="price">$3.99</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/side-view-tea-pouring-into-armudu-glass.jpg" alt="Gaseous Drinks">
+        <h3>Gaseous Drinks</h3>
+        <p>Refreshing selection of gaseous drinks including sodas.</p>
+        <p class="price">$2.49</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="contact-section">
+    <div class="contact-content">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Reach out to us for reservations, inquiries, or just to say hello.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>LOVE CAFE</h3>
+      </div>
+      <div class="footer-info">
+        <p>123 Cafe Street, london</p>
+        <p>Phone/WhatsApp: 07979899990</p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">Menu</a></li>
+          <li><a href="index3.html">About</a></li>
+          <li><a href="index4.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,537 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+/* navbar starts here */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .navbar-toggle {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: none; /* Hide the button on larger screens */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    z-index: 1; /* Add this line to set the z-index */
+  }
+  
+  .nav-links li {
+    padding: 0 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav-links li a:hover{
+    color: #fca311;
+    transition: 0.5s;
+  }
+
+  /* Styles for small screens */
+  @media screen and (max-width: 768px) {
+    .navbar-toggle {
+      display: block; /* Show the button on small screens */
+    }
+    .nav-links {
+      display: none; /* Hide the nav links by default on small screens */
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      background-color: #333;
+    }
+    .nav-links li {
+      padding: 10px;
+    }
+    .nav-links li a {
+      color: #fff;
+    }
+
+    .nav-links li a:hover {
+        color: #fca311; /* Change the color to your desired hover color */
+      }
+  }
+  
+
+
+  /*navbar ends*/
+  
+  /*welcome section starts*/
+  .welcome-section {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/24323.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .welcome-content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .welcome-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .welcome-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #e25f00; /* Change the color to your desired hover background color */
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+  }
+  
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 768px) {
+    .welcome-content h1 {
+      font-size: 2rem;
+    }
+  
+    .welcome-content p {
+      font-size: 1.2rem;
+    }
+  }
+  
+/*wlcome section ends*/
+
+
+/*menu section starts */
+  
+  .menu-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .menu-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item p {
+    font-size: 1.2rem;
+  }
+  
+  .menu-item p.price{
+    color: #fca311;
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .menu-item .price {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .menu-item:hover {
+    background-color:black; /* Change to your desired hover background color */
+    transform: scale(1.05); /* Scale up the menu item on hover */
+    color: white;
+  }
+  
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 768px) {
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .menu-item img {
+      max-height: 300px;
+    }
+  
+    .menu-item .price {
+      font-size: 1rem;
+    }
+  }
+  
+/*menu section ends */
+
+
+/* Unique class styles for the "About Us" section */
+
+
+/* Unique class styles for the "About Us" section */
+.about-us {
+    background-color: #f8f8f8;
+    padding: 50px;
+  }
+  
+  /* Grid layout for responsiveness */
+  .about-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .about-us-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Styles for the text content */
+  .about-us-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-us-header {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-paragraph {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .about-us-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF6347;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .about-us-button:hover {
+    background-color: #FF473A;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 768px) {
+    .about-us-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  /* Unique class styles for the testimonial section */
+/* Unique class styles for the testimonial section */
+.testimonial-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .section-header {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .testimonial-card {
+    position: relative;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-author {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Icon styles */
+  .fa-quote-left {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #FF6347;
+  }
+  
+  /* Hover effect styles */
+  .testimonial-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 99, 71, 0.2);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .testimonial-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 768px) {
+    .testimonial-container {
+      flex-direction: column;
+    }
+  
+    .testimonial-card {
+      max-width: 100%;
+    }
+  }
+
+  
+
+
+  /* Unique class styles for the footer */
+
+  /* Unique class styles for the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .footer-logo h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .footer-info {
+    text-align: center;
+  }
+  
+  .footer-info p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-social {
+    display: flex;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #555;
+    margin-right: 10px;
+  }
+  
+  .social-icon i {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-info {
+      margin-top: 20px;
+    }
+  
+    .footer-links {
+      margin-top: 20px;
+    }
+  
+    .footer-social {
+      margin-top: 20px;
+    }
+  }
+  
+
+
+  .contact-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #fca311;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #f77f00;
+  }
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 768px) {
+    .contact-form {
+      grid-template-columns: 1fr;
+    }
+    
+    .contact-form button {
+      font-size: 1.2rem;
+    }
+  }
+  
